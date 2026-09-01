@@ -777,6 +777,8 @@ ul { list-style: none; }
 @media (max-width: 1024px) {
   .videos__grid--4 { grid-template-columns: repeat(2, 1fr); }
 }
+
+.video-card h3 { font-size: 1.1rem; margin-bottom: 4px; }
 .video-card p { font-size: 0.9rem; color: var(--color-text-muted); }
 
 .video-placeholder {
