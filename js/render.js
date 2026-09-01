@@ -33,7 +33,6 @@ async function renderSite() {
   renderApplications(data.applications);
   renderVideos(data.videos);
   renderApplicationVideos(data.applicationVideos);
-  renderGallery(data.gallery);
   renderContact(data.contact);
 }
 
