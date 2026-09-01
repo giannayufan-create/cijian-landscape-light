@@ -32,6 +32,7 @@ async function renderSite() {
   renderComparison(data.comparison);
   renderApplications(data.applications);
   renderVideos(data.videos);
+  renderApplicationVideos(data.applicationVideos);
   renderGallery(data.gallery);
   renderContact(data.contact);
 }
@@ -210,14 +211,8 @@ function renderApplications(section) {
   `).join('');
 }
 
-function renderVideos(videos) {
-  const container = document.getElementById('videosGrid');
-  if (!container) return;
-
-  const validVideos = (videos || []).filter(v => v.youtubeUrl);
-  if (validVideos.length === 0) return;
-
-  container.innerHTML = validVideos.map(v => {
+function buildVideoCards(videos) {
+  return videos.map(v => {
     const embed = youtubeEmbedUrl(v.youtubeUrl);
     const isShorts = v.type === 'shorts' || v.youtubeUrl.includes('/shorts/');
     return `
@@ -232,6 +227,31 @@ function renderVideos(videos) {
       </div>
     `;
   }).join('');
+}
+
+function renderVideos(videos) {
+  const container = document.getElementById('videosGrid');
+  if (!container) return;
+
+  const validVideos = (videos || []).filter(v => v.youtubeUrl);
+  if (validVideos.length === 0) return;
+
+  container.innerHTML = buildVideoCards(validVideos);
+}
+
+function renderApplicationVideos(section) {
+  if (!section) return;
+  setText('appVideosTag', section.tag);
+  setText('appVideosTitle', section.title);
+  setText('appVideosSubtitle', section.subtitle);
+
+  const container = document.getElementById('applicationVideosGrid');
+  if (!container) return;
+
+  const items = (section.items || []).filter(v => v.youtubeUrl);
+  if (items.length === 0) return;
+
+  container.innerHTML = buildVideoCards(items);
 }
 
 function renderGallery(gallery) {

@@ -146,7 +146,42 @@
       "type": "shorts"
     }
   ],
-  "videosNote": "更多實驗影片即將上線",
+  "videosNote": "",
+  "applicationVideos": {
+    "tag": "實際應用",
+    "title": "戶外實際應用影片",
+    "subtitle": "真實場景與實驗測試，展現升降景觀燈的專業品質",
+    "items": [
+      {
+        "id": "av1",
+        "title": "各樣升降景觀燈",
+        "youtubeUrl": "https://youtube.com/shorts/Y5pGnCh9oIc",
+        "description": "多款升降景觀燈綜合展示",
+        "type": "shorts"
+      },
+      {
+        "id": "av2",
+        "title": "步道燈實際應用",
+        "youtubeUrl": "https://youtube.com/shorts/kdRYKts9by4",
+        "description": "EL75DR 步道燈戶外實際安裝效果",
+        "type": "shorts"
+      },
+      {
+        "id": "av3",
+        "title": "洗牆燈 · 投射燈 · 照樹燈",
+        "youtubeUrl": "https://youtube.com/shorts/5nkM6KGQ5os",
+        "description": "戶外實際應用綜合展示",
+        "type": "shorts"
+      },
+      {
+        "id": "av4",
+        "title": "水中實驗影片",
+        "youtubeUrl": "https://youtube.com/shorts/uqKrGf6HRZs",
+        "description": "IP67 防水性能實驗測試",
+        "type": "shorts"
+      }
+    ]
+  },
   "gallery": [],
   "contact": {
     "person": "業務賴宥宏",

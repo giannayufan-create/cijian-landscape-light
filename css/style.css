@@ -768,7 +768,15 @@ ul { list-style: none; }
   height: 100%;
 }
 
-.video-card h3 { font-size: 1.1rem; margin-bottom: 4px; }
+.application-videos { background: var(--color-bg-alt); }
+
+.videos__grid--4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 1024px) {
+  .videos__grid--4 { grid-template-columns: repeat(2, 1fr); }
+}
 .video-card p { font-size: 0.9rem; color: var(--color-text-muted); }
 
 .video-placeholder {
