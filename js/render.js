@@ -98,7 +98,7 @@ function renderProducts(products) {
       <div class="product-card__badge">${p.badge || ''}</div>
       <div class="product-card__image">
         ${p.image
-          ? `<img src="${p.image}?v=2" alt="${p.model}" loading="lazy">`
+          ? `<img src="${p.image}?v=3" alt="${p.model}" loading="lazy">`
           : `<div class="product-card__placeholder"><span>${p.model}</span></div>`
         }
       </div>
@@ -124,14 +124,18 @@ function renderInstallation(section) {
   setText('installTag', section.tag);
   setText('installTitle', section.title);
   setText('installSubtitle', section.subtitle);
-  setText('installIntro', section.intro);
+  if (section.intro) setText('installIntro', section.intro);
+
   const img = document.getElementById('installImage');
-  if (img && section.image) img.src = section.image;
+  if (img && section.image) img.src = section.image + '?v=3';
+
+  const conduitImg = document.getElementById('installConduitImage');
+  if (conduitImg && section.conduitImage) conduitImg.src = section.conduitImage + '?v=3';
 
   const stepsEl = document.getElementById('installSteps');
-  if (stepsEl && section.steps) {
+  if (stepsEl && section.steps && section.steps.length) {
     stepsEl.innerHTML = section.steps.map((s, i) => `
-      <li class="install-step reveal">
+      <li class="install-step">
         <span class="install-step__num">${i + 1}</span>
         <div>
           <strong>${s.title}</strong>
@@ -142,9 +146,9 @@ function renderInstallation(section) {
   }
 
   const highlightsEl = document.getElementById('installHighlights');
-  if (highlightsEl && section.highlights) {
+  if (highlightsEl && section.highlights && section.highlights.length) {
     highlightsEl.innerHTML = section.highlights.map(h => `
-      <div class="install-highlight reveal">
+      <div class="install-highlight">
         <span class="install-highlight__icon">${h.icon}</span>
         <div>
           <strong>${h.title}</strong>

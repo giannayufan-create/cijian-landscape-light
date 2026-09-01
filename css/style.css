@@ -511,9 +511,15 @@ ul { list-style: none; }
 
 .installation__grid {
   display: grid;
-  grid-template-columns: 1fr 1.1fr;
+  grid-template-columns: 0.9fr 1.1fr;
   gap: 48px;
   align-items: start;
+}
+
+.installation__images {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .installation__visual {
@@ -526,6 +532,21 @@ ul { list-style: none; }
 .installation__visual img {
   width: 100%;
   display: block;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+}
+
+.installation__caption {
+  padding: 10px 16px;
+  font-size: 0.85rem;
+  color: var(--color-accent);
+  text-align: center;
+  background: var(--color-surface);
+  border-top: 1px solid var(--color-border);
+}
+
+.installation__content {
+  min-width: 0;
 }
 
 .installation__intro {
@@ -941,6 +962,8 @@ ul { list-style: none; }
   .about__grid, .contact__grid { grid-template-columns: 1fr; gap: 40px; }
   .installation__grid { grid-template-columns: 1fr; }
   .installation__highlights { grid-template-columns: 1fr; }
+  .installation__images { flex-direction: row; flex-wrap: wrap; }
+  .installation__images .installation__visual { flex: 1; min-width: 140px; }
   .about__stats { flex-direction: row; }
   .stat { flex: 1; }
 }
