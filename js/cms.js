@@ -44,13 +44,25 @@ function getContent() {
 }
 
 async function getSiteContent() {
+  const isAdmin = window.location.pathname.includes('admin');
+
+  // 官網優先讀伺服器 content.json，不被 localStorage 舊資料覆蓋
+  if (!isAdmin) {
+    try {
+      const res = await fetch('data/content.json');
+      if (res.ok) return await res.json();
+    } catch { /* fallback below */ }
+    return loadDefaultContent();
+  }
+
+  // 後台才使用 localStorage 暫存編輯內容
   const stored = getContent();
   if (stored) return stored;
 
   try {
     const res = await fetch('data/content.json');
     if (res.ok) return await res.json();
-  } catch { /* 無 content.json 時使用預設 */ }
+  } catch { /* fallback below */ }
 
   return loadDefaultContent();
 }
