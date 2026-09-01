@@ -452,6 +452,7 @@ ul { list-style: none; }
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center top;
   transition: var(--transition);
 }
 
@@ -503,6 +504,111 @@ ul { list-style: none; }
   border-radius: 6px;
   font-size: 0.75rem;
   color: var(--color-accent-light);
+}
+
+/* ===== Installation ===== */
+.installation { background: var(--color-bg-alt); }
+
+.installation__grid {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.installation__visual {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+}
+
+.installation__visual img {
+  width: 100%;
+  display: block;
+}
+
+.installation__intro {
+  color: var(--color-text-muted);
+  font-size: 1.05rem;
+  margin-bottom: 28px;
+  line-height: 1.8;
+}
+
+.installation__steps {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.install-step {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  padding: 18px 20px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  transition: var(--transition);
+}
+
+.install-step:hover {
+  border-color: rgba(201, 162, 39, 0.25);
+}
+
+.install-step__num {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-green);
+  color: var(--color-accent-light);
+  font-weight: 700;
+  font-size: 0.95rem;
+  border-radius: 50%;
+}
+
+.install-step strong {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--color-accent);
+}
+
+.install-step p {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
+.installation__highlights {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.install-highlight {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 16px;
+  background: rgba(30, 77, 53, 0.25);
+  border: 1px solid rgba(42, 107, 74, 0.4);
+  border-radius: var(--radius);
+}
+
+.install-highlight__icon { font-size: 1.4rem; flex-shrink: 0; }
+
+.install-highlight strong {
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 2px;
+}
+
+.install-highlight p {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
 }
 
 /* ===== Features ===== */
@@ -833,6 +939,8 @@ ul { list-style: none; }
   .features__grid { grid-template-columns: repeat(2, 1fr); }
   .comparison__wrap { grid-template-columns: 1fr; }
   .about__grid, .contact__grid { grid-template-columns: 1fr; gap: 40px; }
+  .installation__grid { grid-template-columns: 1fr; }
+  .installation__highlights { grid-template-columns: 1fr; }
   .about__stats { flex-direction: row; }
   .stat { flex: 1; }
 }

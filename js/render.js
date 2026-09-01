@@ -27,6 +27,7 @@ async function renderSite() {
   renderAboutFeatures(about.features);
 
   renderProducts(data.products);
+  renderInstallation(data.installation);
   renderFeatures(data.features);
   renderComparison(data.comparison);
   renderApplications(data.applications);
@@ -116,6 +117,42 @@ function renderProducts(products) {
   container.querySelectorAll('.product-card').forEach((card, i) => {
     card.style.transitionDelay = `${i * 0.12}s`;
   });
+}
+
+function renderInstallation(section) {
+  if (!section) return;
+  setText('installTag', section.tag);
+  setText('installTitle', section.title);
+  setText('installSubtitle', section.subtitle);
+  setText('installIntro', section.intro);
+  const img = document.getElementById('installImage');
+  if (img && section.image) img.src = section.image;
+
+  const stepsEl = document.getElementById('installSteps');
+  if (stepsEl && section.steps) {
+    stepsEl.innerHTML = section.steps.map((s, i) => `
+      <li class="install-step reveal">
+        <span class="install-step__num">${i + 1}</span>
+        <div>
+          <strong>${s.title}</strong>
+          <p>${s.desc}</p>
+        </div>
+      </li>
+    `).join('');
+  }
+
+  const highlightsEl = document.getElementById('installHighlights');
+  if (highlightsEl && section.highlights) {
+    highlightsEl.innerHTML = section.highlights.map(h => `
+      <div class="install-highlight reveal">
+        <span class="install-highlight__icon">${h.icon}</span>
+        <div>
+          <strong>${h.title}</strong>
+          <p>${h.desc}</p>
+        </div>
+      </div>
+    `).join('');
+  }
 }
 
 function renderFeatures(section) {
