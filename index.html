@@ -281,9 +281,31 @@
       <div class="section__header">
         <p class="section__tag">影片介紹</p>
         <h2 class="section__title">產品實機展示</h2>
-        <p class="section__subtitle">觀看升降景觀燈的實際運作效果</p>
+        <p class="section__subtitle" id="videosSubtitle">三款主力產品實機展示 · 更多實驗影片即將上線</p>
       </div>
-      <div class="videos__grid" id="videosGrid"></div>
+      <div class="videos__grid" id="videosGrid">
+        <div class="video-card">
+          <div class="video-card__embed video-card__embed--shorts">
+            <iframe src="https://www.youtube.com/embed/upr9WTXBIaI" title="EL75DR 步道燈" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <h3>EL75DR 步道燈</h3>
+          <p>360° 環形步道燈實機展示</p>
+        </div>
+        <div class="video-card">
+          <div class="video-card__embed video-card__embed--shorts">
+            <iframe src="https://www.youtube.com/embed/wQdR-EBLM2M" title="EL90U 洗牆燈" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <h3>EL90U 洗牆燈</h3>
+          <p>120° 廣角洗牆燈實機展示</p>
+        </div>
+        <div class="video-card">
+          <div class="video-card__embed video-card__embed--shorts">
+            <iframe src="https://www.youtube.com/embed/faVpAl6Ajgs" title="EL70U 照樹燈" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <h3>EL70U 照樹燈</h3>
+          <p>可調式照樹燈實機展示</p>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -319,7 +341,7 @@
             </li>
             <li>
               <span class="contact__detail-icon">✉️</span>
-              <div><strong>電子郵件</strong><p id="contactEmail"><a href="mailto:ko520940@gmail.com">ko520940@gmail.com</a></p></div>
+              <div><strong>電子郵件</strong><p id="contactEmail"><a href="mailto:ko520941@gmail.com">ko520941@gmail.com</a></p></div>
             </li>
             <li>
               <span class="contact__detail-icon">📍</span>
@@ -331,29 +353,35 @@
             </li>
           </ul>
         </div>
-        <form class="contact__form" id="contactForm">
+        <form class="contact__form" id="contactForm" action="https://formsubmit.co/ko520941@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="【賜建科技官網】新諮詢表單">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          <input type="text" name="_honey" style="display:none">
+          <input type="hidden" name="_next" value="https://cijian-landscape-light.vercel.app/?sent=1#contact">
           <h3>產品諮詢表單</h3>
+          <p class="contact__form-note">填寫後將直接寄至業務信箱 ko520941@gmail.com</p>
           <div class="form__group">
             <label for="name">姓名</label>
-            <input type="text" id="name" placeholder="請輸入您的姓名" required>
+            <input type="text" id="name" name="姓名" placeholder="請輸入您的姓名" required>
           </div>
           <div class="form__group">
             <label for="phone">電話</label>
-            <input type="tel" id="phone" placeholder="請輸入聯絡電話" required>
+            <input type="tel" id="phone" name="電話" placeholder="請輸入聯絡電話" required>
           </div>
           <div class="form__group">
             <label for="product">感興趣的產品</label>
-            <select id="product">
+            <select id="product" name="感興趣的產品">
               <option value="">請選擇產品</option>
-              <option value="EL75DR">EL75DR 步道燈</option>
-              <option value="EL70U">EL70U 照樹燈</option>
-              <option value="EL90U">EL90U 洗牆燈</option>
-              <option value="other">其他 / 不確定</option>
+              <option value="EL75DR 步道燈">EL75DR 步道燈</option>
+              <option value="EL70U 照樹燈">EL70U 照樹燈</option>
+              <option value="EL90U 洗牆燈">EL90U 洗牆燈</option>
+              <option value="其他">其他 / 不確定</option>
             </select>
           </div>
           <div class="form__group">
             <label for="message">需求說明</label>
-            <textarea id="message" rows="4" placeholder="請描述您的空間類型與照明需求..." required></textarea>
+            <textarea id="message" name="需求說明" rows="4" placeholder="請描述您的空間類型與照明需求..." required></textarea>
           </div>
           <button type="submit" class="btn btn--primary btn--full">送出諮詢</button>
         </form>

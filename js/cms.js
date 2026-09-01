@@ -27,7 +27,7 @@ function getEmbeddedDefault() {
     applications: { tag: '適用場景', title: '多元空間，完美適配', items: [] },
     videos: [],
     gallery: [],
-    contact: { person: '業務賴宥宏', phone: '0900-130-271', phoneRaw: '0900130271', email: 'ko520940@gmail.com', address: '桃園市龜山區萬壽路一段 611-7 號', hours: '週一至週五 09:00 – 18:00' }
+    contact: { person: '業務賴宥宏', phone: '0900-130-271', phoneRaw: '0900130271', email: 'ko520941@gmail.com', address: '桃園市龜山區萬壽路一段 611-7 號', hours: '週一至週五 09:00 – 18:00' }
   };
 }
 

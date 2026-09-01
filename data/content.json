@@ -126,17 +126,33 @@
   "videos": [
     {
       "id": "v1",
-      "title": "升降景觀燈產品介紹",
-      "youtubeUrl": "",
-      "description": "待新增 YouTube 連結"
+      "title": "EL75DR 步道燈",
+      "youtubeUrl": "https://youtube.com/shorts/upr9WTXBIaI",
+      "description": "360° 環形步道燈實機展示",
+      "type": "shorts"
+    },
+    {
+      "id": "v2",
+      "title": "EL90U 洗牆燈",
+      "youtubeUrl": "https://youtube.com/shorts/wQdR-EBLM2M",
+      "description": "120° 廣角洗牆燈實機展示",
+      "type": "shorts"
+    },
+    {
+      "id": "v3",
+      "title": "EL70U 照樹燈",
+      "youtubeUrl": "https://youtube.com/shorts/faVpAl6Ajgs",
+      "description": "可調式照樹燈實機展示",
+      "type": "shorts"
     }
   ],
+  "videosNote": "更多實驗影片即將上線",
   "gallery": [],
   "contact": {
     "person": "業務賴宥宏",
     "phone": "0900-130-271",
     "phoneRaw": "0900130271",
-    "email": "ko520940@gmail.com",
+    "email": "ko520941@gmail.com",
     "address": "桃園市龜山區萬壽路一段 611-7 號",
     "hours": "週一至週五 09:00 – 18:00"
   }

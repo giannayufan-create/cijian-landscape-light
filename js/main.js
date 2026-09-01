@@ -18,11 +18,17 @@ navMenu.querySelectorAll('.nav__link').forEach(link => {
   });
 });
 
-document.getElementById('contactForm').addEventListener('submit', e => {
-  e.preventDefault();
-  alert('感謝您的諮詢！我們將盡快與您聯繫。');
-  e.target.reset();
-});
+// 表單送出成功提示（FormSubmit 導回網站時顯示）
+if (new URLSearchParams(window.location.search).get('sent') === '1') {
+  const form = document.getElementById('contactForm');
+  if (form) {
+    const notice = document.createElement('p');
+    notice.className = 'contact__success';
+    notice.textContent = '✓ 諮詢已送出！我們將盡快與您聯繫。';
+    form.prepend(notice);
+    history.replaceState(null, '', window.location.pathname + '#contact');
+  }
+}
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', e => {

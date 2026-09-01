@@ -215,22 +215,14 @@ function renderVideos(videos) {
   if (!container) return;
 
   const validVideos = (videos || []).filter(v => v.youtubeUrl);
-  if (validVideos.length === 0) {
-    container.innerHTML = `
-      <div class="video-placeholder reveal">
-        <div class="video-placeholder__icon">▶</div>
-        <p>影片即將上線</p>
-        <span>您可透過後台管理新增 YouTube 連結</span>
-      </div>
-    `;
-    return;
-  }
+  if (validVideos.length === 0) return;
 
   container.innerHTML = validVideos.map(v => {
     const embed = youtubeEmbedUrl(v.youtubeUrl);
+    const isShorts = v.type === 'shorts' || v.youtubeUrl.includes('/shorts/');
     return `
       <div class="video-card reveal">
-        <div class="video-card__embed">
+        <div class="video-card__embed ${isShorts ? 'video-card__embed--shorts' : ''}">
           <iframe src="${embed}" title="${v.title}" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen loading="lazy"></iframe>
