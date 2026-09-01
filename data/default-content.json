@@ -1,0 +1,123 @@
+{
+  "password": "cijian2026",
+  "theme": {
+    "accentColor": "#c9a227",
+    "accentLight": "#f0d78c",
+    "primaryGreen": "#1e4d35",
+    "bgColor": "#0a0f0d",
+    "bgAlt": "#111916",
+    "textColor": "#e8ebe9",
+    "textMuted": "#8a9a90"
+  },
+  "site": {
+    "brandName": "賜建科技",
+    "brandSub": "CIJIAN TECHNOLOGY",
+    "tagline": "升降景觀燈 · 台灣第一領導品牌",
+    "madeInTaiwan": "台灣設計 · 台灣生產 · 台灣製造"
+  },
+  "hero": {
+    "tag": "昇華 Lux 可伸縮景觀燈系列",
+    "title": "一盞燈，點亮生活",
+    "titleHighlight": "現代美學 × 景觀升級",
+    "desc": "白天隱藏於地面，夜晚優雅升起。賜建科技升降景觀燈，為您的空間創造無縫日夜轉換的照明體驗。",
+    "titleSize": "4.5",
+    "descSize": "1.1",
+    "tagColor": "#c9a227",
+    "titleColor": "#ffffff",
+    "image": "images/hero-product.png"
+  },
+  "about": {
+    "tag": "關於賜建",
+    "title": "專業 LED 照明 · 台灣製造",
+    "desc": "賜建科技（Artled）2001 年於新北成立，專注 LED 照明研發與製造。研發團隊累積數十年經驗，涵蓋電子控制、光學技術、散熱機構等核心領域，擁有多項台灣及國際專利。產品銷售遍及全球，從大樓外牆、商業空間到庭園造景皆有豐富實績。我們堅持高品質、高效能、高可靠性的節能照明，讓每個角落都更有光彩。",
+    "stats": [
+      { "number": "2001", "label": "成立年份" },
+      { "number": "20+", "label": "年研發經驗" },
+      { "number": "#1", "label": "台灣升降燈品牌" }
+    ],
+    "features": [
+      { "title": "台灣研發製造", "desc": "從設計到生產，全程在台灣完成" },
+      { "title": "專利技術", "desc": "台灣、中國專利，美澳申請中" },
+      { "title": "國際認證", "desc": "UL 1838、UL8750、CSA 等安全認證" }
+    ],
+    "titleSize": "2.5",
+    "descSize": "1"
+  },
+  "products": [
+    {
+      "id": "el75dr",
+      "model": "EL75DR",
+      "name": "360° 環形步道燈",
+      "badge": "主推產品",
+      "desc": "360° 全向照明，霧面透鏡提供柔和光線，適用於步道、庭園路徑。白天完全隱藏於地面，夜晚自動升起照明。",
+      "specs": ["AC 12V", "5W / 8W", "Ø3 英吋", "高度 6\" / 12\" / 24\"", "360° 環形照明", "IP67 防水防塵"],
+      "image": "images/el75-series.png",
+      "featured": true
+    },
+    {
+      "id": "el70u",
+      "model": "EL70U",
+      "name": "可調式照樹燈",
+      "badge": "主推產品",
+      "desc": "0°–45° 可調投射角度，多種光束角選擇（30° / 60° / 90°），完美照亮樹木、建築立面與景觀特色。",
+      "specs": ["AC 12V", "3W / 6W / 9W", "2.8\" × 2.8\"", "高度 6\" / 12\" / 24\"", "0°–45° 可調角度", "IP67 防水防塵"],
+      "image": "images/el70-el90.png",
+      "featured": true
+    },
+    {
+      "id": "el90u",
+      "model": "EL90U",
+      "name": "120° 洗牆燈",
+      "badge": "主推產品",
+      "desc": "120° 廣角洗牆照明，均勻覆蓋建築外牆與景觀立面，打造專業級建築光影效果。",
+      "specs": ["AC 12V", "12W", "1.6\" × 3.5\"", "高度 6\"", "120° 廣角洗牆", "IP67 防水防塵"],
+      "image": "images/el70-el90.png",
+      "featured": true
+    }
+  ],
+  "features": {
+    "tag": "產品特色",
+    "title": "為什麼選擇升降景觀燈？",
+    "items": [
+      { "icon": "↑", "title": "自動升降", "desc": "通電自動升起，斷電自動收回，無縫日夜轉換" },
+      { "icon": "🛡", "title": "防撞防損", "desc": "收回後與地面齊平，割草機、車輛通行無礙" },
+      { "icon": "💧", "title": "IP67 防護", "desc": "全密封設計，防水防塵，適應各種戶外環境" },
+      { "icon": "⚡", "title": "節能 LED", "desc": "高效 LED 光源，2700K–5000K 四段色溫可選" },
+      { "icon": "🔧", "title": "維護便利", "desc": "升降機構設計，清潔維護更加輕鬆" },
+      { "icon": "🏆", "title": "台灣專利", "desc": "自主研發設計，台灣第一升降景觀燈品牌" }
+    ]
+  },
+  "comparison": {
+    "tag": "產品比較",
+    "title": "升降式 vs 傳統固定式",
+    "image": "images/comparison.png",
+    "items": [
+      { "aspect": "美觀設計", "retractable": "隱藏式設計，白天景觀更乾淨美觀", "traditional": "燈具外露，影響整體景觀美感" },
+      { "aspect": "安全性", "retractable": "收回後與地面齊平，避免絆倒碰撞", "traditional": "固定高度，兒童長者易絆倒" },
+      { "aspect": "耐用性", "retractable": "收回地下，免受風吹日曬雨淋", "traditional": "長期暴露，易腐蝕褪色" },
+      { "aspect": "維護便利", "retractable": "升降設計，清潔維護更輕鬆", "traditional": "損壞需整組拆卸更換" }
+    ]
+  },
+  "applications": {
+    "tag": "適用場景",
+    "title": "多元空間，完美適配",
+    "items": ["公園公共空間", "步道人行道", "庭園住宅區", "社區大樓庭院", "商業廣場", "酒店度假村"]
+  },
+  "videos": [
+    {
+      "id": "v1",
+      "title": "升降景觀燈產品介紹",
+      "youtubeUrl": "",
+      "description": "待新增 YouTube 連結"
+    }
+  ],
+  "gallery": [],
+  "contact": {
+    "phone": "02-8200-5588",
+    "fax": "02-8200-5599",
+    "email": "info@artled.com",
+    "website": "www.artled.com",
+    "address": "桃園市龜山區萬壽路一段 611-7 號",
+    "hours": "週一至週五 09:00 – 18:00"
+  }
+}

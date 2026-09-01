@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="賜建科技 — 升降景觀燈台灣第一領導品牌，台灣設計台灣製造。EL75DR 步道燈、EL70U 照樹燈、EL90U 洗牆燈。">
+  <title>賜建科技 | 升降景觀燈 · 台灣第一領導品牌</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- 頂部品牌條 -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <span id="madeInTaiwan">台灣設計 · 台灣生產 · 台灣製造</span>
+      <span id="tagline">升降景觀燈 · 台灣第一領導品牌</span>
+    </div>
+  </div>
+
+  <!-- 導覽列 -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#home" class="nav__logo">
+        <div class="nav__logo-text">
+          <span class="nav__logo-main brandNameAll" id="brandName">賜建科技</span>
+          <span class="nav__logo-sub" id="brandSub">CIJIAN TECHNOLOGY</span>
+        </div>
+      </a>
+      <button class="nav__toggle" id="navToggle" aria-label="開啟選單">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__menu" id="navMenu">
+        <li><a href="#home" class="nav__link">首頁</a></li>
+        <li><a href="#about" class="nav__link">關於我們</a></li>
+        <li><a href="#products" class="nav__link">產品系列</a></li>
+        <li><a href="#features" class="nav__link">產品特色</a></li>
+        <li><a href="#videos" class="nav__link">影片介紹</a></li>
+        <li><a href="#gallery" class="nav__link">案例展示</a></li>
+        <li><a href="#contact" class="nav__link nav__link--cta">聯絡我們</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 主視覺 -->
+  <section class="hero" id="home">
+    <div class="hero__bg"></div>
+    <div class="container hero__grid">
+      <div class="hero__content">
+        <p class="hero__tag" id="heroTag">昇華 Lux 可伸縮景觀燈系列</p>
+        <h1 class="hero__title" id="heroTitle">
+          一盞燈，點亮生活<br>
+          <span>現代美學 × 景觀升級</span>
+        </h1>
+        <p class="hero__desc" id="heroDesc">
+          白天隱藏於地面，夜晚優雅升起。賜建科技升降景觀燈，為您的空間創造無縫日夜轉換的照明體驗。
+        </p>
+        <div class="hero__actions">
+          <a href="#products" class="btn btn--primary">探索產品</a>
+          <a href="#videos" class="btn btn--outline">觀看影片</a>
+        </div>
+        <div class="hero__badges">
+          <span class="hero__badge">🇹🇼 台灣製造</span>
+          <span class="hero__badge">🏆 台灣第一</span>
+          <span class="hero__badge">✓ UL 認證</span>
+        </div>
+      </div>
+      <div class="hero__visual">
+        <div class="hero__image-wrap">
+          <img id="heroImage" src="images/hero-product.png" alt="升降景觀燈" class="hero__image">
+          <div class="img-placeholder" style="display:none">產品圖片</div>
+          <div class="hero__glow"></div>
+        </div>
+        <div class="hero__demo">
+          <div class="hero__demo-item">
+            <span class="hero__demo-label hero__demo-label--off">OFF</span>
+            <div class="hero__demo-light hero__demo-light--off"></div>
+            <span>白天隱藏</span>
+          </div>
+          <div class="hero__demo-arrow">→</div>
+          <div class="hero__demo-item">
+            <span class="hero__demo-label hero__demo-label--on">ON</span>
+            <div class="hero__demo-light hero__demo-light--on"></div>
+            <span>夜晚升起</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 關於我們 -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="about__grid">
+        <div class="about__text">
+          <p class="section__tag" id="aboutTag">關於賜建</p>
+          <h2 class="section__title" id="aboutTitle">專業 LED 照明 · 台灣製造</h2>
+          <p class="about__desc" id="aboutDesc"></p>
+          <ul class="about__features" id="aboutFeatures"></ul>
+        </div>
+        <div class="about__visual">
+          <div class="about__stats" id="aboutStats"></div>
+          <div class="about__cert">
+            <div class="cert-badge">UL 1838</div>
+            <div class="cert-badge">UL 8750</div>
+            <div class="cert-badge">CSA</div>
+            <div class="cert-badge">IP67</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 產品系列 -->
+  <section class="products section" id="products">
+    <div class="container">
+      <div class="section__header">
+        <p class="section__tag">產品系列</p>
+        <h2 class="section__title">昇華 Lux 升降景觀燈</h2>
+        <p class="section__subtitle">三款主力產品，滿足步道、照樹、洗牆全方位照明需求</p>
+      </div>
+      <div class="products__grid" id="productsGrid"></div>
+    </div>
+  </section>
+
+  <!-- 產品特色 -->
+  <section class="features section" id="features">
+    <div class="container">
+      <div class="section__header">
+        <p class="section__tag" id="featuresTag">產品特色</p>
+        <h2 class="section__title" id="featuresTitle">為什麼選擇升降景觀燈？</h2>
+      </div>
+      <div class="features__grid" id="featuresGrid"></div>
+    </div>
+  </section>
+
+  <!-- 產品比較 -->
+  <section class="comparison section" id="comparison">
+    <div class="container">
+      <div class="section__header">
+        <p class="section__tag" id="comparisonTag">產品比較</p>
+        <h2 class="section__title" id="comparisonTitle">升降式 vs 傳統固定式</h2>
+      </div>
+      <div class="comparison__wrap">
+        <div class="comparison__image-wrap reveal">
+          <img id="comparisonImage" src="images/comparison.png" alt="升降式與傳統燈比較" loading="lazy">
+        </div>
+        <div class="comparison__table" id="comparisonTable"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 適用場景 -->
+  <section class="applications section" id="applications">
+    <div class="container">
+      <div class="section__header">
+        <p class="section__tag" id="appsTag">適用場景</p>
+        <h2 class="section__title" id="appsTitle">多元空間，完美適配</h2>
+      </div>
+      <div class="apps__grid" id="appsGrid"></div>
+    </div>
+  </section>
+
+  <!-- 影片介紹 -->
+  <section class="videos section" id="videos">
+    <div class="container">
+      <div class="section__header">
+        <p class="section__tag">影片介紹</p>
+        <h2 class="section__title">產品實機展示</h2>
+        <p class="section__subtitle">觀看升降景觀燈的實際運作效果</p>
+      </div>
+      <div class="videos__grid" id="videosGrid"></div>
+    </div>
+  </section>
+
+  <!-- 案例展示 -->
+  <section class="gallery section" id="gallery">
+    <div class="container">
+      <div class="section__header">
+        <p class="section__tag">案例展示</p>
+        <h2 class="section__title">實際應用案例</h2>
+      </div>
+      <div class="gallery__grid" id="galleryGrid"></div>
+    </div>
+  </section>
+
+  <!-- 聯絡我們 -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="contact__grid">
+        <div class="contact__info">
+          <p class="section__tag">聯絡我們</p>
+          <h2 class="section__title">開始您的<br>照明計畫</h2>
+          <p class="contact__desc">
+            歡迎與賜建科技聯繫，我們將提供專業的產品諮詢與照明規劃建議。
+          </p>
+          <ul class="contact__details">
+            <li>
+              <span class="contact__detail-icon">📞</span>
+              <div><strong>電話</strong><p id="contactPhone">02-8200-5588</p></div>
+            </li>
+            <li>
+              <span class="contact__detail-icon">📠</span>
+              <div><strong>傳真</strong><p id="contactFax">02-8200-5599</p></div>
+            </li>
+            <li>
+              <span class="contact__detail-icon">✉️</span>
+              <div><strong>電子郵件</strong><p id="contactEmail">info@artled.com</p></div>
+            </li>
+            <li>
+              <span class="contact__detail-icon">🌐</span>
+              <div><strong>網站</strong><p id="contactWebsite">www.artled.com</p></div>
+            </li>
+            <li>
+              <span class="contact__detail-icon">📍</span>
+              <div><strong>地址</strong><p id="contactAddress">桃園市龜山區萬壽路一段 611-7 號</p></div>
+            </li>
+            <li>
+              <span class="contact__detail-icon">🕐</span>
+              <div><strong>營業時間</strong><p id="contactHours">週一至週五 09:00 – 18:00</p></div>
+            </li>
+          </ul>
+        </div>
+        <form class="contact__form" id="contactForm">
+          <h3>產品諮詢表單</h3>
+          <div class="form__group">
+            <label for="name">姓名</label>
+            <input type="text" id="name" placeholder="請輸入您的姓名" required>
+          </div>
+          <div class="form__group">
+            <label for="phone">電話</label>
+            <input type="tel" id="phone" placeholder="請輸入聯絡電話" required>
+          </div>
+          <div class="form__group">
+            <label for="product">感興趣的產品</label>
+            <select id="product">
+              <option value="">請選擇產品</option>
+              <option value="EL75DR">EL75DR 步道燈</option>
+              <option value="EL70U">EL70U 照樹燈</option>
+              <option value="EL90U">EL90U 洗牆燈</option>
+              <option value="other">其他 / 不確定</option>
+            </select>
+          </div>
+          <div class="form__group">
+            <label for="message">需求說明</label>
+            <textarea id="message" rows="4" placeholder="請描述您的空間類型與照明需求..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">送出諮詢</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- 頁尾 -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="brandNameAll">賜建科技</span>
+        <span class="footer__sub">CIJIAN TECHNOLOGY · 台灣製造</span>
+      </div>
+      <p class="footer__copy">&copy; 2026 賜建科技股份有限公司. All rights reserved.</p>
+      <a href="admin.html" class="footer__admin">管理後台</a>
+    </div>
+  </footer>
+
+  <script src="js/cms.js"></script>
+  <script src="js/render.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
