@@ -98,7 +98,7 @@ function renderProducts(products) {
       <div class="product-card__badge">${p.badge || ''}</div>
       <div class="product-card__image">
         ${p.image
-          ? `<img src="${p.image}?v=3" alt="${p.model}" loading="lazy">`
+          ? `<img src="${p.image}?v=4" alt="${p.model} ${p.name}" loading="lazy">`
           : `<div class="product-card__placeholder"><span>${p.model}</span></div>`
         }
       </div>
