@@ -141,10 +141,10 @@ function populateAll() {
   renderGalleryEditor(content.gallery);
 
   const c = content.contact;
+  setVal('contactPerson', c.person);
   setVal('contactPhone', c.phone);
-  setVal('contactFax', c.fax);
+  setVal('contactPhoneRaw', c.phoneRaw);
   setVal('contactEmail', c.email);
-  setVal('contactWebsite', c.website);
   setVal('contactAddress', c.address);
   setVal('contactHours', c.hours);
 
@@ -200,10 +200,10 @@ function collectAll() {
   content.comparison.items = collectComparisonItems();
 
   content.contact = {
+    person: getVal('contactPerson'),
     phone: getVal('contactPhone'),
-    fax: getVal('contactFax'),
+    phoneRaw: getVal('contactPhoneRaw'),
     email: getVal('contactEmail'),
-    website: getVal('contactWebsite'),
     address: getVal('contactAddress'),
     hours: getVal('contactHours')
   };

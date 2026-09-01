@@ -266,10 +266,18 @@ function renderGallery(gallery) {
 
 function renderContact(contact) {
   if (!contact) return;
-  setText('contactPhone', contact.phone);
-  setText('contactFax', contact.fax);
-  setText('contactEmail', contact.email);
-  setText('contactWebsite', contact.website);
+  setText('contactPerson', contact.person);
+  const phoneEl = document.getElementById('contactPhone');
+  if (phoneEl) {
+    const num = contact.phoneRaw || contact.phone?.replace(/-/g, '');
+    phoneEl.innerHTML = num
+      ? `<a href="tel:${num}">${contact.phone || num}</a>`
+      : (contact.phone || '');
+  }
+  const emailEl = document.getElementById('contactEmail');
+  if (emailEl && contact.email) {
+    emailEl.innerHTML = `<a href="mailto:${contact.email}">${contact.email}</a>`;
+  }
   setText('contactAddress', contact.address);
   setText('contactHours', contact.hours);
 }
